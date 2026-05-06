@@ -1,0 +1,20 @@
+{
+  "name": "Respiratory Meta Engine",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+
+  "postCreateCommand": "pip install -r requirements.txt",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker",
+        "github.copilot"
+      ]
+    }
+  },
+
+  "remoteEnv": {
+    "PYTHONPATH": "${containerWorkspaceFolder}"
+  }
+}
